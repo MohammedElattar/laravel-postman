@@ -1,0 +1,29 @@
+{
+    "name": "elattar/laravel_postman",
+    "description": "This Package Export Postman Collection From Api Routes",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Elattar\\LaravelPostman\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohamed Attar",
+            "email": "mohammedattar0100020@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "orchestra/testbench": "dev-develop",
+        "phpunit/phpunit": "^10.1@dev"
+    },
+    "extra": {
+        "laravel":{
+            "providers": [
+                "Elattar\\LaravelPostman\\src\\LaravelPostmanServiceProvider"
+            ]
+        }
+    }
+}
